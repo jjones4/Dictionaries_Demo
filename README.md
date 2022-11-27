@@ -1,2 +1,4 @@
 # Dictionaries_Demo
-Dictionaries Demonstration
+Examples of dictionaries in C# to demonstrate proficiency
+-Encrypt a message
+-Decrypt the message
