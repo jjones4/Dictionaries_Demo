@@ -41,7 +41,7 @@
             }
 
             // Encrypt a message using the dictionary cipher
-            string? myMessage = "Scissors";
+            string myMessage = "Scissors";
             string mySecretMessage = string.Empty;
 
             Console.WriteLine($"The message you want to encrypt is: {myMessage}");
@@ -63,7 +63,7 @@
 
             foreach (char letter in mySecretMessage)
             {
-                myMessage = myMessage + cipher.FirstOrDefault(x => x.Value == letter).Key;
+                myMessage += cipher.First(x => x.Value == letter).Key;
             }
 
             Console.WriteLine($"The decrypted message is: {myMessage}");
