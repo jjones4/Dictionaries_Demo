@@ -7,4 +7,5 @@ Examples of dictionaries in C# to demonstrate proficiency
 Sample output:
 <br>
 <br>
+
 ![image](https://user-images.githubusercontent.com/26050634/204171939-5c9458c6-daf8-4b13-b540-d97c0ce04f7f.png)
