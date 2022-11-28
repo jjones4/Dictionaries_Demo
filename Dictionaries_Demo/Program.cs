@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
+
             // Encrypt and decrypt a message using a Dictionary
             // as the key/value storage system
             List<char> letters = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f', 
@@ -44,7 +46,7 @@
             string myMessage = "Scissors";
             string mySecretMessage = string.Empty;
 
-            Console.WriteLine($"The message you want to encrypt is: {myMessage}");
+            Console.WriteLine($"   The message you want to encrypt is: {myMessage}");
             Console.WriteLine();
 
             foreach (char letter in myMessage)
@@ -52,11 +54,11 @@
                 mySecretMessage += cipher[Char.ToLower(letter)];
             }
 
-            Console.WriteLine($"The encrypted message is: {mySecretMessage}");
+            Console.WriteLine($"   The encrypted message is: {mySecretMessage}");
             Console.WriteLine();
 
             // Decrypt the message using the dictionary cipher
-            Console.WriteLine($"The message you want to decrypt is: {mySecretMessage}");
+            Console.WriteLine($"   The message you want to decrypt is: {mySecretMessage}");
             Console.WriteLine();
 
             myMessage = string.Empty;
@@ -66,7 +68,7 @@
                 myMessage += cipher.First(x => x.Value == letter).Key;
             }
 
-            Console.WriteLine($"The decrypted message is: {myMessage}");
+            Console.WriteLine($"   The decrypted message is: {myMessage}");
             Console.WriteLine();
         }
     }
