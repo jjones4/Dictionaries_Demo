@@ -49,7 +49,7 @@
 
             foreach (char letter in myMessage)
             {
-                mySecretMessage = mySecretMessage + cipher[Char.ToLower(letter)];
+                mySecretMessage += cipher[Char.ToLower(letter)];
             }
 
             Console.WriteLine($"The encrypted message is: {mySecretMessage}");
